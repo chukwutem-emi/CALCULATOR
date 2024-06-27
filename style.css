@@ -1,0 +1,62 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+    width: 400px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+}
+.screen {
+    width: 100%;
+    background-color: black;
+    padding: 20px 5px;
+    text-align: end;
+    font-family: 'Courier New', "Courier new",  Courier monospace;
+    font-size: 40px;
+}
+.calc-button {
+    width: 100%;
+    background-color:#d8d9db;
+    color: black;
+    font-size: 40px;
+    border: none;
+    flex-basis: 24.5%;
+    height: 100px;
+    /* to separate the column, you have to divide the hight by the numbers of column*/
+}
+.calc-button-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    /* the 2% left-over from the height is what we divided by 5rows to get 0.5% */
+    margin-bottom: 0.5%;
+}
+.calc-buttondouble {
+   flex-basis: 49.7%;
+   font-size: 40px;
+}
+.calc-buttontriple {
+    flex-basis: 74.8%;
+    font-size: 40px;
+}
+.calc-button:hover, .calc-buttondouble:hover, .calc-buttontriple:hover {
+    background-color: #ebebeb;
+}
+.calc-button:active, .calc-buttondouble:active, .calc-buttontriple:active {
+    background-color: #bbbcbe;
+} 
+.calc-button:last-child {
+    background-color: #df974c;
+    color: white;
+}
+.calc-button:last-child:hover {
+    background-color: #dfb07e;
+}
